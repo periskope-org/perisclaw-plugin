@@ -1,0 +1,25 @@
+{
+  "name": "perisclaw",
+  "displayName": "Perisclaw",
+  "version": "0.3.0",
+  "description": "Catch up on WhatsApp, and review and send replies from Claude through Perisclaw.",
+  "author": {
+    "name": "Perisclaw",
+    "url": "https://perisclaw.com"
+  },
+  "homepage": "https://docs.perisclaw.com/use-with-claude-and-other-ai/mcp-server",
+  "repository": "https://github.com/periskope-org/perisclaw-plugin",
+  "license": "MIT",
+  "keywords": ["whatsapp", "messaging", "contacts", "productivity"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://docs.perisclaw.com/use-with-claude-and-other-ai/mcp-server",
+  "supportUrl": "https://what.sapp.link/perisclaw",
+  "privacyPolicyUrl": "https://perisclaw.com/legal/privacy-policy",
+  "termsOfServiceUrl": "https://perisclaw.com/legal/terms-of-service",
+  "mcpServers": {
+    "perisclaw": {
+      "type": "http",
+      "url": "https://api.perisclaw.com/mcp/plugin"
+    }
+  }
+}
