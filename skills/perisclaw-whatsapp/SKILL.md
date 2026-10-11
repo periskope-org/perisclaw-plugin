@@ -50,10 +50,11 @@ approved it in the conversation):
 3. If the result is `uncertain`, do not prepare it again. Tell the user it may not
    have gone out and check with `reply_status(draft_id)`.
 
-Plain text, including quoted replies, never uses `message_send`; the plugin
-rejects text-only calls. Use `message_send` only for media, polls, locations,
-contact cards, events or buttons, after confirming the content. It has no receipt
-guarantee: do not retry an ambiguous send.
+A text-only `message_send` (optionally quoting a message) runs the same two steps
+and returns the same receipt. Pass a new `request_id` UUID for each message and
+the same one if you retry, so a retry never sends twice. Use `message_send` for
+media, polls, locations, contact cards, events or buttons after confirming the
+content; those have no receipt guarantee, so do not retry an ambiguous rich send.
 
 WhatsApp supports `*bold*`, `_italic_`, `~strike~`, single-backtick inline code,
 and triple-backtick monospace blocks. Use raw URLs rather than Markdown links.
