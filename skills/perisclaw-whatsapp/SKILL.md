@@ -1,13 +1,14 @@
 ---
 name: perisclaw-whatsapp
 description: >-
-  Read, search and summarize WhatsApp, show what needs a reply, review and send
-  replies from cards, and manage conversations or schedules through the
-  connected Perisclaw plugin. Use for WhatsApp work with Perisclaw; includes
-  account and recipient resolution and replies that send at most once.
+  Work with Perisclaw, the user's AI executive assistant, through their
+  connected WhatsApp: catch up on what needs a reply, read, search and summarize
+  conversations, review and send replies from cards, and manage chats or
+  schedules. Includes account and recipient resolution and replies that send at
+  most once.
 ---
 
-# Perisclaw WhatsApp
+# Perisclaw
 
 Use the connected account's tools. On first use, identify the account with
 `get_profile` and read before showing a card. Explain read-only access when applicable.
@@ -85,12 +86,11 @@ watching the same chat again is refused until the time given in the refusal, so
 tell the user that time. If events and these tools are not advertised,
 explain that watching chats is not available on this connection yet.
 
-Use Perisclaw **Automations** for scheduled or durable actions owned by Perisclaw.
-Read the advertised schemas; create a disabled automation, preview it, and enable
-only when its recipient, content, timing and timezone have been approved. Use the
-operator's self-chat for personal reminders. Inspect existing automations before
-creating another. Never create both an event subscription and an Automation for
-one monitoring request unless the user explicitly requests both.
+Perisclaw **Automations** (scheduled or durable actions) can be listed, inspected,
+enabled or disabled, paused, resumed, cancelled or deleted here; enable one only
+after the user approves its recipient, content and timing. New Automations are
+created, and run on demand, in Perisclaw itself, not from this plugin: when the
+user asks for a schedule, say so rather than improvising one.
 
 ## Other supported actions
 
