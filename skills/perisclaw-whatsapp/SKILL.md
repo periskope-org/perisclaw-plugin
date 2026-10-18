@@ -60,6 +60,16 @@ content; those have no receipt guarantee, so do not retry an ambiguous rich send
 WhatsApp supports `*bold*`, `_italic_`, `~strike~`, single-backtick inline code,
 and triple-backtick monospace blocks. Use raw URLs rather than Markdown links.
 
+## WhatsApp status
+
+`status_post(text?, media_file | media_url | media_id, contact_ids?)` posts a
+status (the 24-hour story) from the user's account now: text, or an image or
+video with `text` as the caption. All saved contacts see it unless
+`contact_ids` names who should. Confirm the content and who will see it first.
+A large audience takes about 20 seconds per 1,000 contacts and has no receipt:
+never retry a slow or timed-out call, because a retry posts it again. A status
+at a later time is scheduled in Perisclaw itself.
+
 ## Attachments
 
 Use `media_download(message_id, delivery?)` for media on a message. `auto`
