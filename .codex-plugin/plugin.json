@@ -1,0 +1,40 @@
+{
+  "name": "perisclaw",
+  "version": "0.3.0",
+  "description": "Use your own WhatsApp from Codex through Perisclaw, your AI executive assistant on WhatsApp: catch up, search chats and send replies.",
+  "author": {
+    "name": "Perisclaw",
+    "email": "support@periskope.app",
+    "url": "https://www.perisclaw.com"
+  },
+  "homepage": "https://docs.perisclaw.com/mcp-server",
+  "repository": "https://github.com/periskope-org/perisclaw-plugin",
+  "license": "MIT",
+  "keywords": ["whatsapp", "messaging", "executive assistant", "productivity", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": {
+    "perisclaw": {
+      "type": "http",
+      "url": "https://api.perisclaw.com/mcp/plugin"
+    }
+  },
+  "interface": {
+    "displayName": "Perisclaw",
+    "shortDescription": "Use your own WhatsApp from Codex: catch up, search chats, send replies.",
+    "longDescription": "Perisclaw connects the WhatsApp number you already use to Codex, ChatGPT, Claude and other AI tools. Ask what needs your reply, find a message or address someone sent, summarise a busy group, and review and send replies. Sign in with OAuth, choose read-only or read and write, and revoke access anytime.",
+    "developerName": "Perisclaw",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://www.perisclaw.com",
+    "privacyPolicyURL": "https://www.perisclaw.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://www.perisclaw.com/legal/terms-of-service",
+    "defaultPrompt": [
+      "What needs my reply on WhatsApp?",
+      "Find the office address Periskope Enterprise sent me.",
+      "Reply to Bharat that Friday works."
+    ],
+    "brandColor": "#2D6A4F",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}
